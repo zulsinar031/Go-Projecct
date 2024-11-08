@@ -25,7 +25,7 @@ func main() {
 
 	greetUsers()
 
-	// for {
+	
 	firstName, lastName, email, userTickets := getUserInput()
 	isValidName, isValidEmail, isValidTicketNumber := validateUserInput(firstName, lastName, email, userTickets)
 
@@ -40,7 +40,7 @@ func main() {
 		fmt.Printf("The first names of bookings are: %v\n", firstNames)
 
 		if remainingTickets == 0 {
-			// end program
+			
 			fmt.Println("Our conference is booked out. Come back next year.")
 			// break
 		}
@@ -55,7 +55,7 @@ func main() {
 			fmt.Println("number of tickets you entered is invalid")
 		}
 	}
-	//}
+	
 	wg.Wait()
 }
 
